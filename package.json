@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "name": "check-ossanfm-feed",
+  "version": "1.0.0",
+  "description": "check ossan.fm feed.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamanishi/check-ossanfm-feed.git"
+  },
+  "keywords": [],
+  "author": "Masayuki Sunahara <tamanishi@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/artifact": "^1.0.0",
+    "@actions/core": "^1.1.0",
+    "@actions/github": "^1.1.0",
+    "node-fetch": "^3.2.3",
+    "rss-parser": "^3.12.0"
+  }
+}
