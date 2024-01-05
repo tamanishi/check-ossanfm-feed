@@ -17,7 +17,7 @@ jobs:
       - name: "update json"
         if: steps.check.outputs.result == 'updated'
         run: |
-          # curl -v https://ossanfm-shownotes.tamanishi.workers.dev
+          curl -v https://ossanfm-shownotes.tamanishi.workers.dev
       - name: "commit rss"
         if: steps.check.outputs.result == 'updated'
         run: |
