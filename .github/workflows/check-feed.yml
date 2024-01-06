@@ -14,7 +14,7 @@ jobs:
       - name: "check rss"
         id: "check"
         uses: tamanishi/check-ossanfm-feed@v0.1
-      - name: "update json"
+      - name: "update d1"
         if: steps.check.outputs.result == 'updated'
         run: |
           curl -v https://ossanfm-shownotes.tamanishi.workers.dev

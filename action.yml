@@ -1,5 +1,5 @@
 name: 'check-ossanfm-feed'
 description: 'check ossan.fm feed'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'index.js'
