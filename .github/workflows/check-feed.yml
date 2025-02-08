@@ -30,7 +30,9 @@ jobs:
         if: ${{ success() && steps.check.outputs.result == 'updated' }}
         run: |
           curl -X POST -H "Content-Type: application/json" -d '{"value1": "${{ github.repository }}", "value2": "succeeded"}' https://maker.ifttt.com/trigger/update_ossanfm_feed/with/key/${{ secrets.IFTTT_WEB_HOOK_KEY }}
+          curl -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}' -d '{ "to": "${{ secrets.LINE_USER_ID }}", "messages":[{ "type":"text", "text":"${{ github.repository }} succeeded" }]}' https://api.line.me/v2/bot/message/push
       - name: notify fail
         if: ${{ failure() }}
         run: |
           curl -X POST -H "Content-Type: application/json" -d '{"value1": "${{ github.repository }}", "value2": "failed"}' https://maker.ifttt.com/trigger/update_ossanfm_feed/with/key/${{ secrets.IFTTT_WEB_HOOK_KEY }}
+          curl -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}' -d '{ "to": "${{ secrets.LINE_USER_ID }}", "messages":[{ "type":"text", "text":"${{ github.repository }} failed" }]}' https://api.line.me/v2/bot/message/push
