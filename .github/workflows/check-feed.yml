@@ -1,14 +1,15 @@
 name: check feed
 
 on:
-  schedule:
-    - cron: "*/15 * * * *"
   workflow_dispatch:
+
+env:
+  D1_TABLES: "Episodes Shownotes"
 
 jobs:
   check-feed:
     runs-on: ubuntu-latest
-    name: check, trigger & commit
+    name: check, generate & commit
     steps:
       - uses: actions/checkout@v3
       - name: "check rss"
@@ -18,6 +19,21 @@ jobs:
         if: steps.check.outputs.result == 'updated'
         run: |
           curl -v https://ossanfm-shownotes.tamanishi.workers.dev
+      - name: download custom sling cli
+        run: |
+          curl -L -o sling https://sling-cli.tamanishi.net/sling
+          chmod +x sling
+          sudo mv sling /usr/local/bin/
+
+      - name: export D1 to parquet using sling
+        env:
+          D1_CONNECTION: ${{ secrets.D1_CONNECTION }}
+        run: |
+          for table in $D1_TABLES
+          do
+            echo "Exporting table: $table"
+            sling run --src-conn "$D1_CONNECTION" --src-stream "$table" --tgt-object "file://${table}.parquet"
+          done
       - name: "commit rss"
         if: steps.check.outputs.result == 'updated'
         run: |
