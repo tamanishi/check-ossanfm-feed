@@ -36,6 +36,7 @@ jobs:
       - name: "commit rss, parquet"
         # if: steps.check.outputs.result == 'updated'
         run: |
+          ls -la
           git add ./rss.xml
           git add ./Episodes.parquet
           git add ./Shownotes.parquet
