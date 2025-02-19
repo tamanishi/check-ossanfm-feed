@@ -24,7 +24,6 @@ jobs:
           curl -L -o sling https://sling-cli.tamanishi.net/sling
           chmod +x sling
           sudo mv sling /usr/local/bin/
-
       - name: export D1 to parquet using sling
         env:
           D1_CONNECTION: ${{ secrets.D1_CONNECTION }}
@@ -34,14 +33,16 @@ jobs:
             echo "Exporting table: $table"
             sling run --src-conn "$D1_CONNECTION" --src-stream "$table" --tgt-object "file://${table}.parquet --debug"
           done
-      - name: "commit rss"
-        if: steps.check.outputs.result == 'updated'
+      - name: "commit rss, parquet"
+        # if: steps.check.outputs.result == 'updated'
         run: |
           git add ./rss.xml
+          git add ./Episodes.parquet
+          git add ./Shownotes.parquet
           git config user.name "Masayuki Sunahara"
           git config user.email tamanishi@gmail.com
           git commit -m "update episodes"
-          git push origin main
+        #   git push origin generate_parquet
       - name: notify success
         if: ${{ success() && steps.check.outputs.result == 'updated' }}
         run: |
