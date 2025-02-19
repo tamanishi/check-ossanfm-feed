@@ -32,7 +32,7 @@ jobs:
           for table in $D1_TABLES
           do
             echo "Exporting table: $table"
-            sling run --src-conn "$D1_CONNECTION" --src-stream "$table" --tgt-object "file://${table}.parquet"
+            sling run --src-conn "$D1_CONNECTION" --src-stream "$table" --tgt-object "file://${table}.parquet --debug"
           done
       - name: "commit rss"
         if: steps.check.outputs.result == 'updated'
