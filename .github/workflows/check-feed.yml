@@ -8,7 +8,7 @@ on:
 jobs:
   check-feed:
     runs-on: ubuntu-latest
-    name: check, trigger & commit
+    name: check, generate & commit
     steps:
       - uses: actions/checkout@v3
       - name: "check rss"
@@ -18,10 +18,29 @@ jobs:
         if: steps.check.outputs.result == 'updated'
         run: |
           curl -v https://ossanfm-shownotes.tamanishi.workers.dev
-      - name: "commit rss"
+      - name: download custom sling cli
+        if: steps.check.outputs.result == 'updated'
+        run: |
+          curl -L -o sling https://sling-cli.tamanishi.net/sling
+          chmod +x sling
+          sudo mv sling /usr/local/bin/
+      - name: export D1 to parquet using sling
+        if: steps.check.outputs.result == 'updated'
+        env:
+            D1_CONNECTION: ${{ secrets.D1_CONNECTION }}
+            D1_TABLES: "Episodes Shownotes"
+        run: |
+          for table in $D1_TABLES
+          do
+            echo "Exporting table: $table"
+            sling run --src-conn "$D1_CONNECTION" --src-stream "$table" --tgt-object "file://${table}.parquet" --debug
+          done
+      - name: "commit rss, parquet"
         if: steps.check.outputs.result == 'updated'
         run: |
           git add ./rss.xml
+          git add ./Episodes.parquet
+          git add ./Shownotes.parquet
           git config user.name "Masayuki Sunahara"
           git config user.email tamanishi@gmail.com
           git commit -m "update episodes"
@@ -29,10 +48,8 @@ jobs:
       - name: notify success
         if: ${{ success() && steps.check.outputs.result == 'updated' }}
         run: |
-          curl -X POST -H "Content-Type: application/json" -d '{"value1": "${{ github.repository }}", "value2": "succeeded"}' https://maker.ifttt.com/trigger/update_ossanfm_feed/with/key/${{ secrets.IFTTT_WEB_HOOK_KEY }}
           curl -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}' -d '{ "to": "${{ secrets.LINE_USER_ID }}", "messages":[{ "type":"text", "text":"${{ github.repository }} succeeded" }]}' https://api.line.me/v2/bot/message/push
       - name: notify fail
         if: ${{ failure() }}
         run: |
-          curl -X POST -H "Content-Type: application/json" -d '{"value1": "${{ github.repository }}", "value2": "failed"}' https://maker.ifttt.com/trigger/update_ossanfm_feed/with/key/${{ secrets.IFTTT_WEB_HOOK_KEY }}
           curl -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}' -d '{ "to": "${{ secrets.LINE_USER_ID }}", "messages":[{ "type":"text", "text":"${{ github.repository }} failed" }]}' https://api.line.me/v2/bot/message/push
