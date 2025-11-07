@@ -27,6 +27,44 @@
     <itunes:explicit>no</itunes:explicit>
     
       <item>
+        <title>370. SongmuがPodcastを始めて1年が過ぎました (ゲスト:@songmuさん)</title>
+        <link>https://ossan.fm/episode/370</link>
+        <pubDate>Fri, 07 Nov 2025 12:00:00 +0900</pubDate>
+        <description>&lt;p&gt;🎙Ossan.fm🎧&lt;/p&gt;&lt;ul&gt;
+  &lt;li&gt;00:00 ゲスト紹介（@songmuさん）&lt;/li&gt;
+  &lt;li&gt;03:53 Podcast「趣味でOSSをやっている者だ」を始めて1年のあれこれ&lt;/li&gt;
+  &lt;li&gt;14:35 Podcastを始めるときに色々と聞かれた&lt;/li&gt;
+  &lt;li&gt;21:04 リスナーのコミュニティ、やりとり&lt;/li&gt;
+  &lt;li&gt;32:40 白暮のクロニクル&lt;/li&gt;
+  &lt;li&gt;38:27 ジェン・ブイ&lt;/li&gt;
+  &lt;li&gt;42:40 YAPC::Fukuoka 2025&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;番組への📮&lt;a href=&quot;https://forms.gle/LU6iX1XoprZPpLFx7&quot;&gt;おたより&lt;/a&gt;、お待ちしております！ &lt;a href=&quot;https://twitter.com/ossanfm/status/1182083571965730817&quot;&gt;番組特製ステッカー&lt;/a&gt;ご希望の方は送付先などご記入ください。&lt;/p&gt;
+
+&lt;h2 id=&quot;関連リンク&quot;&gt;関連リンク&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://oss4.fun/&quot;&gt;趣味でOSSをやっている者だ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ossan.fm/episode/200&quot;&gt;200. 自転車の話をしましょう！ (ゲスト:@songmuさん) - Ossan.fm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ossan.fm/episode/201&quot;&gt;201. もう少し自転車の話をしましょう！ (ゲスト:@songmuさん) - Ossan.fm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://x.com/soudai1025/status/1984214988924596340&quot;&gt;そーだい@初代ALF: “@chris4403 梅田です。まだですか？ “ / X&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.co.jp/dp/4091858473&quot;&gt;白暮のクロニクル - ゆうき まさみ - Amazon&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.co.jp/dp/B0CBFWLZF1&quot;&gt;ジェン・ブイ - Prime Video&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://yapcjapan.org/2025fukuoka/&quot;&gt;YAPC::Fukuoka 2025&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;次回は、11 月 14 日（金）公開予定です。&lt;/p&gt;
+番組への感想や質問などは📮&lt;a href=&quot;https://forms.gle/LU6iX1XoprZPpLFx7&quot;&gt;&lt;b&gt;こちら&lt;/b&gt;&lt;/a&gt;から（Google Formが開きます）。どんなことでもお気軽にメッセージください!</description>
+        <guid isPermaLink="true">https://ossan.fm/episode/370</guid>
+        <enclosure url="https://cdn.ossan.fm/audio/370.mp3" length="30327147" type="audio/mp3"/>
+        <itunes:author>ossan.fm</itunes:author>
+        <itunes:subtitle>nagayamaとchris4403の2人が、songmuさんをゲストにお迎えして、スタートして1年が経ったPodcast「趣味でOSSをやっている者だ」についてのあれこれや、漫画「白暮のクロニクル」、ドラマ「ジェン・ブイ」、YAPC::Fukuoka 2025についておしゃべりしました。</itunes:subtitle>
+        <itunes:duration>00:47:33</itunes:duration>
+        <itunes:explicit>no</itunes:explicit>
+        <media:thumbnail url="https://ossan.fm/images/artwork.png?201903"/>
+      </item>
+    
+      <item>
         <title>369. おまつりっすん2025</title>
         <link>https://ossan.fm/episode/369</link>
         <pubDate>Fri, 31 Oct 2025 12:00:00 +0900</pubDate>
