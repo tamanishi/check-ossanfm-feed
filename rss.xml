@@ -27,6 +27,46 @@
     <itunes:explicit>no</itunes:explicit>
     
       <item>
+        <title>373. ライブっていいね</title>
+        <link>https://ossan.fm/episode/373</link>
+        <pubDate>Fri, 28 Nov 2025 12:00:00 +0900</pubDate>
+        <description>&lt;p&gt;🎙Ossan.fm🎧&lt;/p&gt;&lt;ul&gt;
+  &lt;li&gt;00:00 おたより紹介「日食なつこさんのライブでの邂逅」&lt;/li&gt;
+  &lt;li&gt;07:22 偶然を呼ぶライブ&lt;/li&gt;
+  &lt;li&gt;14:20 ライブをやるときのスタイル&lt;/li&gt;
+  &lt;li&gt;27:08 健康トークは反応がある&lt;/li&gt;
+  &lt;li&gt;32:25 老眼鏡を作った&lt;/li&gt;
+  &lt;li&gt;39:56 映画「プレデター：バッドランド」&lt;/li&gt;
+  &lt;li&gt;51:15 SAGYOのPodcast再開&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;番組への📮&lt;a href=&quot;https://forms.gle/LU6iX1XoprZPpLFx7&quot;&gt;おたより&lt;/a&gt;、お待ちしております！ &lt;a href=&quot;https://twitter.com/ossanfm/status/1182083571965730817&quot;&gt;番組特製ステッカー&lt;/a&gt;ご希望の方は送付先などご記入ください。&lt;/p&gt;
+
+&lt;h2 id=&quot;関連リンク&quot;&gt;関連リンク&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nisshoku-natsuko.com/blog/2025/08/11/8615/&quot;&gt;ピアノ弾き語りソロツアー「令和モダニズム Ⅱ “lapin”」開催決定！ - 日食なつこ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.bunpaku.or.jp/&quot;&gt;京都府京都文化博物館&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=rSKjzGT_qkg&quot;&gt;ログマロープ Official Music Video - 日食なつこ - YouTube&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=gbCCJyYDE-s&quot;&gt;風、花、ノイズ、街 - 日食なつこ - YouTube&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://saifes.net/&quot;&gt;20余年続く京都の名物街フェス、西院フェス&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ossan.fm/episode/371&quot;&gt;371. 健康だと飯が美味い (ゲスト:@songmuさん) - Ossan.fm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.20thcenturystudios.jp/movies/predator-badlands&quot;&gt;映画『プレデター：バッドランド』- 20世紀スタジオ公式&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://shop.sagyo.jp/categories/2051762?srsltid=AfmBOopMzRhdK7h2Bfre_jAwHD04VhccVP6bW1l8UWWfvrH6x5vwfHZN&quot;&gt;マグロ漁船の靴下 - SAGYO - 風景をつくっていく野良着&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://listen.style/p/sagyo/q2274acd&quot;&gt;SAGYOの現在地と今後のコンセプト - SAGYOのラジオ - LISTEN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;次回は、11 月 28 日（金）公開予定です。&lt;/p&gt;
+番組への感想や質問などは📮&lt;a href=&quot;https://forms.gle/LU6iX1XoprZPpLFx7&quot;&gt;&lt;b&gt;こちら&lt;/b&gt;&lt;/a&gt;から（Google Formが開きます）。どんなことでもお気軽にメッセージください!</description>
+        <guid isPermaLink="true">https://ossan.fm/episode/373</guid>
+        <enclosure url="https://cdn.ossan.fm/audio/373.mp3" length="37047809" type="audio/mp3"/>
+        <itunes:author>ossan.fm</itunes:author>
+        <itunes:subtitle>nagayamaとchris4403の2人が、おたより紹介「日食なつこさんのライブでの邂逅」、偶然を呼ぶライブ、ライブのスタイル、健康トークへの反応、老眼鏡、映画「プレデター：バッドランド」、SAGYOのPodcast再開についておしゃべりしました。</itunes:subtitle>
+        <itunes:duration>00:55:07</itunes:duration>
+        <itunes:explicit>no</itunes:explicit>
+        <media:thumbnail url="https://ossan.fm/images/artwork.png?201903"/>
+      </item>
+    
+      <item>
         <title>372. YAPC::Fukuoka と LIVE-GYM FYOP NAGOYA</title>
         <link>https://ossan.fm/episode/372</link>
         <pubDate>Fri, 21 Nov 2025 12:00:00 +0900</pubDate>
@@ -58,7 +98,7 @@
         <guid isPermaLink="true">https://ossan.fm/episode/372</guid>
         <enclosure url="https://cdn.ossan.fm/audio/372.mp3" length="34745943" type="audio/mp3"/>
         <itunes:author>ossan.fm</itunes:author>
-        <itunes:subtitle>nagayamaとchris4403の2人が、YAPC::Fukuoka 2025に参加した長山さんの福岡滞在話と、ついておしゃべりしました。</itunes:subtitle>
+        <itunes:subtitle>nagayamaとchris4403の2人が、YAPC::Fukuoka 2025に参加した長山さんの福岡滞在話と、LIVE-GYM FYOP に参加した栗栖さんの名古屋話、アクスタの新作についておしゃべりしました。</itunes:subtitle>
         <itunes:duration>00:50:53</itunes:duration>
         <itunes:explicit>no</itunes:explicit>
         <media:thumbnail url="https://ossan.fm/images/artwork.png?201903"/>
